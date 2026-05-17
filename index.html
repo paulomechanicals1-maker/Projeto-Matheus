@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Short Films</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#ideia">Envie sua ideia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="home">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="videoplayback.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="content">
+      <h3>Portfolio</h3>
+          <h1>Short films & Cinematic experience</h1>
+      <h4>Matheus Von Verhoeven</h4>
+    </div> 
+  </section>
+
+  <section id="galeria" class="galeria">
+    <h2>Galeria</h2>
+<div class="carrossel">
+
+  <button class="prev">◀</button>
+
+  <div class="carrossel-track">
+    
+    <div class="film-card realista">
+      <div class="film-strip">
+        <img src="https://picsum.photos/500/300?1">
+      </div>
+      <div class="info">
+        <h3>Filme 1</h3>
+        <p>Direção</p>
+        <p>Drama - 2min</p>
+      </div>
+    </div>
+
+    <div class="film-card realista">
+      <div class="film-strip">
+        <img src="https://picsum.photos/500/300?2">
+      </div>
+      <div class="info">
+        <h3>Filme 2</h3>
+        <p>Direção</p>
+        <p>Ação - 3min</p>
+      </div>
+    </div>
+
+    <div class="film-card realista">
+      <div class="film-strip">
+        <img src="https://picsum.photos/500/300?3">
+      </div>
+      <div class="info">
+        <h3>Filme 3</h3>
+        <p>Direção</p>
+        <p>Ficção - 1min</p>
+      </div>
+    </div>
+
+    <div class="film-card realista">
+      <div class="film-strip">
+        <img src="https://picsum.photos/500/300?4">
+      </div>
+      <div class="info">
+        <h3>Filme 4</h3>
+        <p>Direçao</p>
+        <p>Drama - 4min</p>
+      </div>
+    </div>
+
+    <div class="film-card realista">
+      <div class="film-strip">
+        <img src="https://picsum.photos/500/300?5">
+      </div>
+      <div class="info">
+        <h3>Filme 5</h3>
+        <p>Direção</p>
+        <p>Ação - 2min</p>
+      </div>
+    </div>
+
+    <div class="film-card realista">
+      <div class="film-strip">
+        <img src="https://picsum.photos/500/300?5">
+      </div>
+      <div class="info">
+        <h3>Filme 6</h3>
+        <p>Direção </p>
+        <p>Ação - 2min</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="next">▶</button>
+
+  </section>
+  
+  <section class="Sobre" id="sobre">
+    <p>Matheus Von Verhoeven é um cineasta apaixonado por contar histórias através de curtas-metragens. Com uma abordagem única e criativa, Matheus tem se destacado no cenário cinematográfico, explorando temas diversos e emocionantes. Seus filmes são conhecidos por sua estética visual impressionante e narrativas envolventes, conquistando o público e a crítica. Com uma carreira promissora, Matheus continua a surpreender com suas produções inovadoras e impactantes.</p>
+  </section>
+
+    <div class="Basico" id="ideia">
+      <h1>Envie sua ideia:</h1>
+      <label for="nome">Seu nome:</label>
+      <input type="text" name="Nome">
+  
+      <label for="email">E-mail:</label>
+      <input type="email" email="Email">
+  
+      <textarea placeholder="Digite sua ideia" rows="5" cols="25"></textarea>
+    </div>
+
+
+    <button id="topBtn">↑</button>
+
+  <script src="script.js"></script>
+
+  <footer> 
+  <p>© 2026 Todos os direitos reservados - Paulo Mechanicals</p>
+  </footer>
+</body>
+</html>
