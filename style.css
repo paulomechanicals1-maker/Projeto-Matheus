@@ -69,10 +69,11 @@ nav a {
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
-h1, h3, h4 {
+h1, h2, h3, h4, {
     margin-top: 0;
     margin-bottom: 0.3em;
     line-height: 1.1;
+    font-family: Limelight, cursive; 
 }
 
 .galeria {
@@ -97,7 +98,8 @@ h1, h3, h4 {
   margin-top: -50px;
   padding: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: Limelight, cursive;
 }
 
 #topBtn {
