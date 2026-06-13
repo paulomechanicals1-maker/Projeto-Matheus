@@ -1,53 +1,40 @@
-// BOTÃO VOLTAR AO TOPO
-const topBtn = document.getElementById("topBtn");
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
 
-window.onscroll = () => {
-  if (document.documentElement.scrollTop > 200) {
-    topBtn.style.display = "block";
-  } else {
-    topBtn.style.display = "none";
-  }
-};
-
-topBtn.onclick = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-};
-
-const track = document.querySelector(".carrossel-track");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
+const track   = document.querySelector('.carrossel-track');
+const cards   = document.querySelectorAll('.film-card');
+const btnPrev = document.querySelector('.prev');
+const btnNext = document.querySelector('.next');
 
 let index = 0;
-const cardWidht = 100;
 
-nextBtn.onclick = () => {
-  if (index < 1) {
-    index++;
-    track.style.transform = `translateX(-${index * cardWidht}%)`;
-  }
-};
+function getVisible() {
+  if (window.innerWidth < 600)  return 1;
+  if (window.innerWidth < 900)  return 2;
+  return 3;
+}
 
-prevBtn.onclick = () => {
-  if (index > 0) {
-    index--;
-    track.style.transform = `translateX(-${index * cardWidht}%)`;
-  }
-};
+function getCardWidth() {
+  const gap  = 24;
+  const vis  = getVisible();
+  const w    = track.parentElement.offsetWidth;
+  return (w - gap * (vis - 1)) / vis + gap;
+}
 
-let lastScroll = 0;
-const nav = document.querySelector("nav");
+function goTo(n) {
+  const max = cards.length - getVisible();
+  index = Math.max(0, Math.min(n, max));
+  track.style.transform = `translateX(-${index * getCardWidth()}px)`;
+}
 
-window.addEventListener("scroll", () => {
-  const current = window.scrollY;
+btnNext.addEventListener('click', () => goTo(index + 1));
+btnPrev.addEventListener('click', () => goTo(index - 1));
+window.addEventListener('resize', () => goTo(index));
 
-  if (current > lastScroll && current > 100) {
-    nav.style.transform = "translateY(-100%)";
-  } else {
-    nav.style.transform = "translateY(0)";
-  }
-
-  lastScroll = current;
+const topBtn = document.getElementById('topBtn');
+window.addEventListener('scroll', () => {
+  topBtn.style.display = window.scrollY > 400 ? 'flex' : 'none';
 });
+topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));

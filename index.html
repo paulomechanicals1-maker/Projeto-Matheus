@@ -2,22 +2,22 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Short Films</title>
+  <title>Matheus Von Verhoeven — Short Films</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Limelight&family=M+PLUS+U:wght@100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
+  <header id="header">
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#galeria">Galeria</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#ideia">Envie sua ideia</a></li>
+        <li><a href="#ideia" class="nav-cta">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -27,119 +27,150 @@
       <source src="videoplayback.mp4" type="video/mp4">
     </video>
     <div class="overlay"></div>
-    <div class="content">
-      <h3>Portfolio</h3>
-          <h1>Short films & Cinematic experience</h1>
-        <h4>Matheus Von Verhoeven</h4>
-    </div> 
+    <div class="hero-content">
+      <span class="eyebrow">Portfolio</span>
+      <h1>Short films &amp;<br><em>Cinematic experience</em></h1>
+      <p class="hero-name">Matheus Von Verhoeven</p>
+      <div class="hero-line"></div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
   </section>
 
   <section id="galeria" class="galeria">
-    <h2>Galeria</h2>
-<div class="carrossel">
-
-  <button class="prev">◀</button>
-
-  <div class="carrossel-track">
-    
-    <div class="film-card realista">
-      <div class="film-strip">
-        <img src="https://picsum.photos/500/300?1">
-      </div>
-      <div class="info">
-        <h3>Filme 1</h3>
-        <p>Direção</p>
-        <p>Drama - 2min</p>
-      </div>
+    <div class="section-header">
+      <span class="section-label">Trabalhos</span>
+      <h2>Galeria</h2>
     </div>
 
-    <div class="film-card realista">
-      <div class="film-strip">
-        <img src="https://picsum.photos/500/300?2">
+    <div class="carrossel">
+      <button class="prev" aria-label="Anterior">&#8592;</button>
+
+      <div class="carrossel-track">
+
+        <div class="film-card">
+          <div class="film-thumb">
+            <img src="https://picsum.photos/500/300?1" alt="Filme 1">
+            <div class="film-info">
+              <span class="film-genre">Drama</span>
+              <h3>Filme 1</h3>
+              <p>Direção &nbsp;·&nbsp; 2min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-thumb">
+            <img src="https://picsum.photos/500/300?2" alt="Filme 2">
+            <div class="film-info">
+              <span class="film-genre">Ação</span>
+              <h3>Filme 2</h3>
+              <p>Direção &nbsp;·&nbsp; 3min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-thumb">
+            <img src="https://picsum.photos/500/300?3" alt="Filme 3">
+            <div class="film-info">
+              <span class="film-genre">Ficção</span>
+              <h3>Filme 3</h3>
+              <p>Direção &nbsp;·&nbsp; 1min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-thumb">
+            <img src="https://picsum.photos/500/300?4" alt="Filme 4">
+            <div class="film-info">
+              <span class="film-genre">Drama</span>
+              <h3>Filme 4</h3>
+              <p>Direção &nbsp;·&nbsp; 4min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-thumb">
+            <img src="https://picsum.photos/500/300?5" alt="Filme 5">
+            <div class="film-info">
+              <span class="film-genre">Ação</span>
+              <h3>Filme 5</h3>
+              <p>Direção &nbsp;·&nbsp; 2min</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="film-card">
+          <div class="film-thumb">
+            <img src="https://picsum.photos/500/300?6" alt="Filme 6">
+            <div class="film-info">
+              <span class="film-genre">Thriller</span>
+              <h3>Filme 6</h3>
+              <p>Direção &nbsp;·&nbsp; 5min</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="info">
-        <h3>Filme 2</h3>
-        <p>Direção</p>
-        <p>Ação - 3min</p>
-      </div>
+
+      <button class="next" aria-label="Próximo">&#8594;</button>
     </div>
-
-    <div class="film-card realista">
-      <div class="film-strip">
-        <img src="https://picsum.photos/500/300?3">
-      </div>
-      <div class="info">
-        <h3>Filme 3</h3>
-        <p>Direção</p>
-        <p>Ficção - 1min</p>
-      </div>
-    </div>
-
-    <div class="film-card realista">
-      <div class="film-strip">
-        <img src="https://picsum.photos/500/300?4">
-      </div>
-      <div class="info">
-        <h3>Filme 4</h3>
-        <p>Direçao</p>
-        <p>Drama - 4min</p>
-      </div>
-    </div>
-
-    <div class="film-card realista">
-      <div class="film-strip">
-        <img src="https://picsum.photos/500/300?5">
-      </div>
-      <div class="info">
-        <h3>Filme 5</h3>
-        <p>Direção</p>
-        <p>Ação - 2min</p>
-      </div>
-    </div>
-
-    <div class="film-card realista">
-      <div class="film-strip">
-        <img src="https://picsum.photos/500/300?5">
-      </div>
-      <div class="info">
-        <h3>Filme 6</h3>
-        <p>Direção </p>
-        <p>Ação - 2min</p>
-      </div>
-    </div>
-
-  </div>
-
-  <button class="next">▶</button>
-  
-  </div>
-
-  </section>
-  
-  <section class="Sobre" id="sobre">
-    <p>Matheus Von Verhoeven. Cineasta, 23 anos, obcecado por luz e narrativa.</p>
-    <p>Recém-formado em Audiovisual, já com alguns curtas nas costas e muita história pra contar.</p>
-    <p>Se você chegou até aqui, provavelmente tem um projeto em mente — fala comigo.</p>
   </section>
 
-    <div class="Basico" id="ideia">
-      <h1>Envie sua ideia:</h1>
-      <label for="nome">Seu nome:</label>
-      <input type="text" name="Nome">
-  
-      <label for="email">E-mail:</label>
-      <input type="email" email="Email">
-  
-      <textarea placeholder="Digite sua ideia" rows="5" cols="25"></textarea>
+  <section id="sobre" class="sobre">
+    <div class="sobre-inner">
+      <div class="section-header">
+        <span class="section-label">Diretor</span>
+        <h2>Sobre</h2>
+      </div>
+      <p class="sobre-text">
+        Matheus Von Verhoeven é um cineasta apaixonado por contar histórias através de curtas-metragens.
+        Com uma abordagem única e criativa, tem se destacado no cenário cinematográfico, explorando temas
+        diversos e emocionantes. Seus filmes são conhecidos pela estética visual impressionante e pelas
+        narrativas envolventes — conquistando o público e a crítica com uma carreira em constante ascensão.
+      </p>
     </div>
+  </section>
 
+  <section id="ideia" class="contato">
+    <div class="contato-inner">
+      <div class="section-header">
+        <span class="section-label">Colaboração</span>
+        <h2>Envie sua ideia</h2>
+      </div>
 
-    <button id="topBtn">↑</button>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Ideia</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua ideia..."></textarea>
+      </div>
+
+      <button class="btn-enviar" type="button">Enviar mensagem</button>
+    </div>
+  </section>
+
+  <button id="topBtn" aria-label="Voltar ao topo">↑</button>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Todos os direitos reservados · Paulo Mechanical's</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-
-  <footer> 
-  <p>© 2026 Todos os direitos reservados - Paulo Mechanicals</p>
-  </footer>
 </body>
 </html>
