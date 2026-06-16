@@ -468,7 +468,6 @@ nav a.nav-cta:hover {
   color: var(--bg);
 }
 
-/* ── Footer ───────────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--border);
   padding: 32px 48px;
@@ -494,7 +493,6 @@ footer p {
   letter-spacing: 0.04em;
 }
 
-/* ── Botão Topo ───────────────────────────────────────── */
 #topBtn {
   position: fixed;
   bottom: 32px;
@@ -518,7 +516,6 @@ footer p {
   background: var(--gold-dim);
 }
 
-/* ── Responsivo ───────────────────────────────────────── */
 @media (max-width: 900px) {
   #header { padding: 18px 24px; }
   #header.scrolled { padding: 14px 24px; }
